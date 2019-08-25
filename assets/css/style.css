@@ -1,0 +1,319 @@
+/* Nav */
+nav {
+  background-color: #657D54;
+}
+.nav-text {
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.nav-text:hover {
+  color: #ff9900;
+}
+
+.nav-logo {
+    width: 225px;
+    height: auto;
+}
+
+nav form {
+    position: relative;
+    height: 100%;
+    background: inherit;
+  }
+  .nav-wrapper{
+    background: inherit; 
+  }
+  
+  .search-close-icon{
+    display: none!important;
+    position: absolute;
+    top: 0;
+    left: 100%!important;
+    padding-left: 0px;
+    color: rgba(0, 0, 0, 0.54);
+    transition: color .2s;
+    cursor: pointer;
+  }
+  
+  input.search-field {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.54);
+    border-radius: 2px;
+    border: 0;
+    height: 36px;
+    padding: 8px 8px 8px 60px;
+    width: 200px;
+    background: #f7f7f7;
+    transition: background 0.2s, width .2s;
+    margin-right: 25px;
+  }
+  input.search-field:hover {
+    background: #ebebeb;
+  }
+  .searchbox {
+    position: relative;
+  }
+  ::placeholder {
+    /* Tents, Hiking gear, Rock Climbing, Hiking boots */
+    color: rgba(0, 0, 0, 0.54);
+  }
+  input.search-field:focus {
+    outline: none;
+    width: 500px;
+    color: #212121;
+  }
+  input.search-field:focus:hover {
+    background: #f7f7f7;
+  }
+  .search-icon {
+    position: absolute;
+    top: 0;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .search-content {
+    color: #303c42;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 8px 10px;
+  }
+  .search-heading {
+    color: #757575;
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  input.search-field ~ .search-popup {
+    overflow: hidden;
+    left: 0px;
+    min-height: 50px;
+    max-height: 700px;
+    width: 200px;
+    top: -450px; 
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: width .2s, top .2s ease-in-out;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  input.search-field:focus ~ .search-popup {
+    width: 500px;
+    top: 50px;
+  }
+  nav ul.popup-list a:hover {
+    background-color: initial;
+  }
+  nav ul.popup-list li {
+    float: none;
+  }
+  nav ul.popup-list li a {
+    line-height: 30px;
+    padding: 0;
+    font-size: 12px;
+    color: #212121 !important;
+  }
+  nav ul.popup-list li a:hover {
+    background-color: #f7f7f7;
+  }
+  
+  p {
+    font-size: 1.3rem;
+  }
+  
+  .top-margin {
+    margin-top: 8px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    input.search-field {
+      width: 1px;
+      margin-right: 0px;
+      padding: 8px 25px;
+    }
+    input.search-field ~ .search-popup {
+      width: 1px;
+      margin-right: 0px;
+      padding: 8px 25px;
+    }
+  
+    .search-icon {
+      top: 0;
+      padding-left: 15px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  
+    input.search-field:focus {
+      margin-right: 0px;
+      width: 100vw;
+      padding: 8px 8px 8px 50px;
+    }
+  
+    input.search-field:focus ~ .search-popup {
+      width: 100vw;
+    }
+  
+    .search-content {
+      width: 100%;
+      padding: 8px 8px;
+    }
+  
+    nav .nav-wrapper {
+      margin-right: 0px;
+    }
+  }
+  
+
+/* Body */
+
+.space {
+    margin: 10px;
+}
+
+.discount-text {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    color: #657D54;
+    margin-top: -12px;
+}
+
+.tag-text {
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+  color: black;
+  margin-top:-100px;
+  margin-bottom: 50px;
+}
+
+.merch-img {
+  height: 275px;
+  padding: 25px;
+  width: auto;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.merch-text {
+  color:#657D54;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.mid-banner {
+  position: relative;
+  align-self: center;
+  width: 100%;
+}
+
+.banner-btn {
+  position: absolute;
+  z-index: 99;
+  margin-top: 250px;
+  left: 45%;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: #ff9900;
+}
+.banner-txt {
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 50;
+  font-size: 100px;
+  color: white;
+  margin: 15px;
+  left: 25%;
+  margin-top: 80px;
+  text-shadow: -1px -1px 0 #222211, 1px -1px 0 #222211, -1px 1px 0 #222211, 1px 1px 0 #222211;
+}
+
+.season-img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.season-txt {
+  text-align: left;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: black;
+  font-size: 35px;
+  padding: 15px;
+  font-weight: 300;
+  position: relative;
+}
+
+
+.btm-banner {
+  margin-top: 25px;
+  width: 100%;
+}
+.overlay {
+  background-color: white;
+  opacity: 0.5;
+}
+
+.text-block {
+  position: absolute;
+  background-color: black;
+  z-index: 99;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50%;
+  width: 930px;
+  text-align: right;
+  margin-top: 75px;
+  padding: 20px;
+}
+
+.btm-txt {
+  color: white;
+  font-family: 'Special Elite', cursive;
+  font-size: 35px;
+  z-index: 99;
+  padding-right: 25px;
+}
+
+.follow-btn {
+  background: #ff9900;
+  color: white;
+  padding-bottom: 25px;
+}
+
+/* footer */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  background-color: #657D54;
+}
+
+.social-btn {
+  background-color:#657D54;
+  color: white;
+  margin: 15px;
+  float: left;
+}
