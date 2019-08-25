@@ -1,2 +1,7 @@
 # Adventure-Gear
-Single spread practice
+
+Home page example - Single spread practice
+
+### Tech Used
+
+HTML5, CSS3, Materialize
